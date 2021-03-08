@@ -1,0 +1,135 @@
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins";
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  font-size: 3em;
+  line-height: 1.2em;
+}
+
+p {
+  color: white;
+}
+
+p.free {
+  color: white;
+  font-size: 15px;
+}
+
+.box-container {
+  width: 100%;
+  display: flex;
+  padding: 80px 80px;
+  height: auto;
+  box-sizing: border-box;
+  flex-flow: row;
+}
+
+.box-item-1,
+.box-item-2 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.box-learn {
+  width: 100%;
+  text-align: left;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.box-form {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.box-free {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  border: 6px solid hsl(248, 32%, 49%);
+  border-radius: 6px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 25px;
+  padding: 10px 40px 20px 40px;
+
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+  height: auto;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  outline: none;
+}
+
+button {
+  border: 2px solid hsl(154, 59%, 51%);
+  background-color: hsl(154, 59%, 51%);
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+}
+
+input[placeholder] {
+  font-family: "Poppins";
+}
+
+span {
+  color: hsl(0, 100%, 74%);
+}
+
+.button {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+}
+
+.error {
+  background-image: url("./icon-error.svg");
+
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-style: italic;
+  font-size: 10px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
